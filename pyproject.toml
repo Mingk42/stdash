@@ -16,9 +16,6 @@ license = {text = "MIT"}
 [tool.setuptools]
 package-dir = {"" = "src"}
 
-[tool.poetry]
-/mount/src/stdash
-
 [tool.pdm]
 distribution = true
 
