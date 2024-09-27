@@ -2,7 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 
-from stdash.data import load_data
+from stdash.data import load_data, font_path
 
 
 data = load_data()
@@ -47,11 +47,8 @@ r_gbcn = m_gbcn["# of reqs"]
 
 ### 한글 폰트 적용 #######
 import matplotlib.font_manager as fm  # 폰트 관리
-import os
 
-font_path=os.path.dirname(os.path.abspath(__file__))
-
-fe = fm.FontEntry(fname=f'{font_path}/fonts/NanumSeongsil.ttf', name='NanumSeongsil') #파일 저장되어있는 경로와 이름 설정
+fe = fm.FontEntry(fname=font_path(), name='NanumSeongsil') #파일 저장되어있는 경로와 이름 설정
 fm.fontManager.ttflist.insert(0, fe)  # Matplotlib에 폰트 추가
 plt.rcParams.update({'font.size': 10, 'font.family': 'NanumSeongsil'}) #폰트설정
 ### 한글 폰트 적용  끝 ###
