@@ -21,10 +21,10 @@ r_gbc = df.groupby(df['request_yyyymmddhh']).count()
 p_gbc = df.groupby(df['prediction_yyyymmddhh']).count()
 
 ##################################################################
-st.title("요청 / 처리건수(h)")
+#st.title("요청 / 처리건수(h)")
 
 
-r_gbcn = r_gbc["num"]
+#r_gbcn = r_gbc["num"]
 ########################################
 # r_gbcn.loc[len(r_gbcn)]=0
 # idx=list(r_gbcn.index)
@@ -33,7 +33,7 @@ r_gbcn = r_gbc["num"]
 
 # r_gbcn.index=idx
 ########################################
-p_gbcn = p_gbc["num"]
+#p_gbcn = p_gbc["num"]
 ##################################################################
 # st.bar_chart(r_gbcn, x_label="Date/Time", y_label="# of Requests", height=450)
 # st.line_chart(p_gbcn, x_label="Date/Time", y_label="# of Requests", height=450)
