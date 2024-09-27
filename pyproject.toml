@@ -8,7 +8,6 @@ authors = [
 dependencies = [
     "streamlit>=1.38.0",
     "matplotlib>=3.9.2",
-    "PyQt5>=5.15.11",
 ]
 requires-python = ">=3.11"
 readme = "README.md"
@@ -24,6 +23,8 @@ distribution = true
 note = [
     "notebook>=7.2.2",
 ]
+
+
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
