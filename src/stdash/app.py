@@ -37,4 +37,3 @@ p_gbc = df.groupby(df['prediction_yyyymmddhh']).count()
 ##################################################################
 # st.bar_chart(r_gbcn, x_label="Date/Time", y_label="# of Requests", height=450)
 # st.line_chart(p_gbcn, x_label="Date/Time", y_label="# of Requests", height=450)
-
